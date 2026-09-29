@@ -1,0 +1,23 @@
+.DS_Store
+**/.DS_Store
+.godot/
+godot/.godot/
+build/
+dist/
+tmp/
+reports/
+node_modules/
+*.log
+*.tmp
+*.bak
+AGENTS.local.md
+AGENT.local.md
+release-signing.env
+*.keystore
+*.jks
+google-services.json
+GoogleService-Info.plist
+
+
+# Princess Maker 2 역공학 자료는 저작권 때문에 공개 저장소에 올리지 않는다.
+extract/

@@ -1,0 +1,344 @@
+[
+  {
+    "id": "END_QUEEN",
+    "name": "왕국 총괄관",
+    "category": "leadership",
+    "weights": {"refinement": 0.22, "discipline": 0.2, "etiquette": 0.18, "communication": 0.2, "reputation": 0.2},
+    "gate": {"stats": {"refinement": 520, "discipline": 480, "etiquette": 460, "communication": 480}, "meters": {"reputation": 520}, "relations": {"citizens": 320}, "lifetimeStats": {"contracts": 18}, "worldTier": 4},
+    "baseRenown": 240,
+    "description": "복잡한 이해관계를 조율하고 장기 계획을 실행하는 최고 수준의 공공 운영 칭호다."
+  },
+  {
+    "id": "END_PRINCESS",
+    "name": "왕립 비전 설계자",
+    "category": "leadership",
+    "weights": {"intelligence": 0.2, "refinement": 0.2, "sensitivity": 0.15, "etiquette": 0.2, "communication": 0.15, "reputation": 0.1},
+    "gate": {"stats": {"intelligence": 360, "refinement": 380, "sensitivity": 260, "etiquette": 340, "communication": 300}, "meters": {"reputation": 360}, "relations": {"guardian": 180, "steward": 180}, "lifetimeStats": {"contracts": 10}, "worldTier": 3},
+    "baseRenown": 175,
+    "description": "전통을 존중하면서도 새로운 제도와 성장 방향을 제안하는 전략 칭호다."
+  },
+  {
+    "id": "END_NOBLE_WIFE",
+    "name": "상류 교류 기획자",
+    "category": "leadership",
+    "weights": {"refinement": 0.25, "style": 0.15, "etiquette": 0.25, "communication": 0.2, "reputation": 0.15},
+    "gate": {"stats": {"refinement": 300, "style": 220, "etiquette": 320, "communication": 270}, "meters": {"reputation": 280}, "relations": {"citizens": 180}, "lifetimeStats": {"contracts": 7}, "worldTier": 2},
+    "baseRenown": 130,
+    "description": "격식 있는 모임을 누구나 참여할 수 있는 교류의 장으로 바꾸는 전문 칭호다."
+  },
+  {
+    "id": "END_COURTLADY",
+    "name": "궁정 운영관",
+    "category": "leadership",
+    "weights": {"refinement": 0.2, "discipline": 0.2, "etiquette": 0.25, "communication": 0.15, "housework": 0.1, "reputation": 0.1},
+    "gate": {"stats": {"refinement": 240, "discipline": 240, "etiquette": 280, "communication": 200, "housework": 160}, "meters": {"reputation": 210}, "relations": {"steward": 160}, "lifetimeStats": {"activities": 160}, "worldTier": 2},
+    "baseRenown": 105,
+    "description": "행사와 일정, 공간의 흐름을 빈틈없이 연결하는 실무 리더 칭호다."
+  },
+  {
+    "id": "END_GENERAL",
+    "name": "연합 전술 지휘관",
+    "category": "martial",
+    "weights": {"stamina": 0.15, "strength": 0.2, "discipline": 0.15, "combat": 0.35, "communication": 0.05, "reputation": 0.1},
+    "gate": {"stats": {"stamina": 480, "strength": 520, "discipline": 360, "combat": 600, "communication": 220}, "meters": {"reputation": 400}, "relations": {"rival": 220}, "lifetimeStats": {"challengeWins": 24, "adventures": 28}, "worldTier": 5},
+    "baseRenown": 230,
+    "description": "동료의 강점을 읽고 위험을 분산해 어려운 작전을 완수하는 지휘 칭호다."
+  },
+  {
+    "id": "END_KNIGHT",
+    "name": "백은 수호기사",
+    "category": "martial",
+    "weights": {"stamina": 0.18, "strength": 0.18, "discipline": 0.14, "morals": 0.15, "combat": 0.3, "reputation": 0.05},
+    "gate": {"stats": {"stamina": 330, "strength": 340, "discipline": 260, "morals": 260, "combat": 400}, "meters": {"reputation": 250}, "relations": {"citizens": 170}, "lifetimeStats": {"challengeWins": 12, "adventures": 15}, "worldTier": 3},
+    "baseRenown": 155,
+    "description": "힘을 과시하기보다 사람과 길을 안전하게 지키는 전투 전문 칭호다."
+  },
+  {
+    "id": "END_MERCENARY",
+    "name": "계약 전술가",
+    "category": "martial",
+    "weights": {"stamina": 0.16, "strength": 0.2, "combat": 0.36, "communication": 0.12, "reputation": 0.06, "gold": 0.1},
+    "gate": {"stats": {"stamina": 260, "strength": 280, "combat": 330, "communication": 180}, "meters": {"reputation": 180}, "lifetimeStats": {"contracts": 14, "adventures": 12}, "worldTier": 3},
+    "baseRenown": 125,
+    "description": "명확한 조건과 안전 기준을 세워 다양한 현장 의뢰를 해결하는 칭호다."
+  },
+  {
+    "id": "END_GUARD",
+    "name": "도시 안전대원",
+    "category": "martial",
+    "weights": {"stamina": 0.22, "strength": 0.18, "discipline": 0.15, "morals": 0.1, "combat": 0.25, "reputation": 0.1},
+    "gate": {"stats": {"stamina": 210, "strength": 190, "discipline": 180, "morals": 160, "combat": 230}, "meters": {"reputation": 160}, "relations": {"citizens": 130}, "lifetimeStats": {"activities": 120}, "worldTier": 1},
+    "baseRenown": 85,
+    "description": "일상의 위험 신호를 먼저 발견하고 시민의 이동을 돕는 안전 실무 칭호다."
+  },
+  {
+    "id": "END_ARCHMAGE",
+    "name": "대마력 구조학자",
+    "category": "magic",
+    "weights": {"intelligence": 0.27, "discipline": 0.12, "magic": 0.43, "communication": 0.08, "reputation": 0.1},
+    "gate": {"stats": {"intelligence": 620, "discipline": 380, "magic": 700, "communication": 260}, "meters": {"reputation": 410}, "lifetimeStats": {"challengeWins": 20, "adventures": 20}, "worldTier": 5},
+    "baseRenown": 245,
+    "description": "복잡한 마력 현상을 안전한 구조로 설명하고 재현하는 최고 연구 칭호다."
+  },
+  {
+    "id": "END_COURT_MAGE",
+    "name": "왕립 마법 자문관",
+    "category": "magic",
+    "weights": {"intelligence": 0.24, "refinement": 0.12, "discipline": 0.12, "magic": 0.32, "etiquette": 0.1, "communication": 0.1},
+    "gate": {"stats": {"intelligence": 390, "refinement": 220, "discipline": 260, "magic": 430, "etiquette": 190, "communication": 210}, "meters": {"reputation": 300}, "relations": {"steward": 180}, "lifetimeStats": {"contracts": 10}, "worldTier": 3},
+    "baseRenown": 165,
+    "description": "마법의 가능성과 위험을 함께 설명해 공공 결정을 돕는 자문 칭호다."
+  },
+  {
+    "id": "END_WITCH",
+    "name": "자유 마도 연구자",
+    "category": "magic",
+    "weights": {"intelligence": 0.22, "sensitivity": 0.18, "style": 0.1, "magic": 0.4, "art": 0.1},
+    "gate": {"stats": {"intelligence": 310, "sensitivity": 260, "style": 180, "magic": 390, "art": 170}, "meters": {"reputation": 150}, "lifetimeStats": {"activities": 180}, "worldTier": 3},
+    "baseRenown": 140,
+    "description": "정해진 학파 밖에서도 독창적인 마법 가설을 꾸준히 검증하는 칭호다."
+  },
+  {
+    "id": "END_SCHOLAR_MAGE",
+    "name": "마도 문헌 해석가",
+    "category": "magic",
+    "weights": {"intelligence": 0.34, "discipline": 0.14, "magic": 0.3, "etiquette": 0.08, "communication": 0.14},
+    "gate": {"stats": {"intelligence": 300, "discipline": 210, "magic": 280, "etiquette": 140, "communication": 180}, "meters": {"reputation": 160}, "lifetimeStats": {"activities": 140}, "worldTier": 2},
+    "baseRenown": 115,
+    "description": "오래된 마법 기록을 현대의 안전 기준과 언어로 다시 풀어내는 칭호다."
+  },
+  {
+    "id": "END_POPE",
+    "name": "신념 공동체 대표",
+    "category": "faith",
+    "weights": {"refinement": 0.12, "morals": 0.25, "faith": 0.28, "etiquette": 0.1, "communication": 0.15, "reputation": 0.1},
+    "gate": {"stats": {"refinement": 300, "morals": 580, "faith": 620, "etiquette": 260, "communication": 350}, "meters": {"reputation": 450}, "relations": {"citizens": 330}, "lifetimeStats": {"contracts": 18}, "worldTier": 5},
+    "baseRenown": 235,
+    "description": "서로 다른 신념을 존중하며 공동체의 윤리적 합의를 이끄는 대표 칭호다."
+  },
+  {
+    "id": "END_SAINT",
+    "name": "치유의 등불",
+    "category": "faith",
+    "weights": {"sensitivity": 0.15, "morals": 0.25, "faith": 0.2, "communication": 0.1, "nursing": 0.2, "reputation": 0.1},
+    "gate": {"stats": {"sensitivity": 330, "morals": 480, "faith": 400, "communication": 250, "nursing": 420}, "meters": {"reputation": 390}, "relations": {"citizens": 300}, "lifetimeStats": {"activities": 300}, "worldTier": 4},
+    "baseRenown": 205,
+    "description": "지친 사람 곁에서 실질적인 회복과 존중을 함께 제공하는 돌봄 칭호다."
+  },
+  {
+    "id": "END_NUN",
+    "name": "고요한 수행자",
+    "category": "faith",
+    "weights": {"discipline": 0.2, "morals": 0.25, "faith": 0.3, "housework": 0.1, "nursing": 0.1, "reputation": 0.05},
+    "gate": {"stats": {"discipline": 260, "morals": 320, "faith": 360, "housework": 160, "nursing": 140}, "meters": {"reputation": 170}, "relations": {"guardian": 150}, "lifetimeStats": {"activities": 180}, "worldTier": 2},
+    "baseRenown": 125,
+    "description": "화려한 성과보다 꾸준한 성찰과 봉사를 이어 가는 수행 칭호다."
+  },
+  {
+    "id": "END_PRIESTESS",
+    "name": "의식 기록관",
+    "category": "faith",
+    "weights": {"intelligence": 0.15, "refinement": 0.15, "morals": 0.15, "faith": 0.25, "etiquette": 0.15, "communication": 0.15},
+    "gate": {"stats": {"intelligence": 210, "refinement": 220, "morals": 230, "faith": 300, "etiquette": 220, "communication": 210}, "meters": {"reputation": 190}, "lifetimeStats": {"activities": 150}, "worldTier": 2},
+    "baseRenown": 110,
+    "description": "공동체 의식의 의미와 절차를 누구나 이해할 언어로 보존하는 칭호다."
+  },
+  {
+    "id": "END_GREAT_ARTIST",
+    "name": "시대의 창작 거장",
+    "category": "art",
+    "weights": {"sensitivity": 0.2, "style": 0.16, "communication": 0.08, "art": 0.4, "reputation": 0.16},
+    "gate": {"stats": {"sensitivity": 520, "style": 430, "communication": 280, "art": 680}, "meters": {"reputation": 450}, "relations": {"citizens": 280}, "lifetimeStats": {"challengeWins": 18}, "worldTier": 5},
+    "baseRenown": 240,
+    "description": "독창적인 작품 세계를 꾸준히 확장해 동시대 창작자에게 영감을 주는 칭호다."
+  },
+  {
+    "id": "END_PAINTER",
+    "name": "빛의 화가",
+    "category": "art",
+    "weights": {"sensitivity": 0.24, "style": 0.16, "discipline": 0.1, "art": 0.42, "reputation": 0.08},
+    "gate": {"stats": {"sensitivity": 280, "style": 210, "discipline": 170, "art": 380}, "meters": {"reputation": 200}, "lifetimeStats": {"activities": 180}, "worldTier": 2},
+    "baseRenown": 130,
+    "description": "평범한 장면 속 빛과 감정을 섬세한 화면으로 남기는 회화 칭호다."
+  },
+  {
+    "id": "END_MUSICIAN",
+    "name": "왕국의 선율가",
+    "category": "art",
+    "weights": {"sensitivity": 0.22, "style": 0.12, "communication": 0.16, "art": 0.38, "reputation": 0.12},
+    "gate": {"stats": {"sensitivity": 270, "style": 180, "communication": 220, "art": 360}, "meters": {"reputation": 230}, "relations": {"citizens": 150}, "lifetimeStats": {"challengeWins": 7}, "worldTier": 2},
+    "baseRenown": 135,
+    "description": "사람들의 기억과 장소의 분위기를 새로운 선율로 엮어 내는 음악 칭호다."
+  },
+  {
+    "id": "END_DANCER",
+    "name": "바람결 안무가",
+    "category": "art",
+    "weights": {"stamina": 0.12, "sensitivity": 0.12, "style": 0.18, "art": 0.18, "dance": 0.32, "reputation": 0.08},
+    "gate": {"stats": {"stamina": 220, "sensitivity": 200, "style": 260, "art": 220, "dance": 400}, "meters": {"reputation": 210}, "lifetimeStats": {"challengeWins": 8}, "worldTier": 2},
+    "baseRenown": 135,
+    "description": "몸의 움직임으로 이야기와 감정을 명료하게 전달하는 무용 칭호다."
+  },
+  {
+    "id": "END_SCHOLAR",
+    "name": "왕립 석학",
+    "category": "scholarship",
+    "weights": {"intelligence": 0.42, "discipline": 0.16, "magic": 0.08, "etiquette": 0.1, "communication": 0.14, "reputation": 0.1},
+    "gate": {"stats": {"intelligence": 620, "discipline": 380, "magic": 200, "etiquette": 230, "communication": 330}, "meters": {"reputation": 380}, "lifetimeStats": {"activities": 360}, "worldTier": 5},
+    "baseRenown": 225,
+    "description": "서로 다른 분야의 지식을 연결해 새로운 질문과 검증 방법을 제시하는 칭호다."
+  },
+  {
+    "id": "END_TEACHER",
+    "name": "성장 길잡이",
+    "category": "scholarship",
+    "weights": {"intelligence": 0.26, "sensitivity": 0.12, "discipline": 0.14, "morals": 0.12, "communication": 0.28, "reputation": 0.08},
+    "gate": {"stats": {"intelligence": 300, "sensitivity": 190, "discipline": 220, "morals": 200, "communication": 340}, "meters": {"reputation": 220}, "relations": {"citizens": 160}, "lifetimeStats": {"activities": 200}, "worldTier": 2},
+    "baseRenown": 130,
+    "description": "학습자의 속도와 강점을 살펴 스스로 답을 찾도록 돕는 교육 칭호다."
+  },
+  {
+    "id": "END_WRITER",
+    "name": "별길 기록 작가",
+    "category": "scholarship",
+    "weights": {"intelligence": 0.25, "sensitivity": 0.22, "discipline": 0.1, "communication": 0.18, "art": 0.2, "reputation": 0.05},
+    "gate": {"stats": {"intelligence": 260, "sensitivity": 260, "discipline": 160, "communication": 240, "art": 260}, "meters": {"reputation": 170}, "lifetimeStats": {"activities": 170}, "worldTier": 2},
+    "baseRenown": 120,
+    "description": "탐험과 일상의 순간을 생생한 문장으로 남겨 다음 세대에 전하는 칭호다."
+  },
+  {
+    "id": "END_MERCHANT",
+    "name": "공정 교역 설계자",
+    "category": "commerce",
+    "weights": {"intelligence": 0.16, "refinement": 0.1, "discipline": 0.14, "morals": 0.12, "communication": 0.28, "reputation": 0.1, "gold": 0.1},
+    "gate": {"stats": {"intelligence": 270, "refinement": 180, "discipline": 230, "morals": 180, "communication": 360}, "meters": {"reputation": 260}, "relations": {"citizens": 190}, "lifetimeStats": {"contracts": 16}, "worldTier": 3},
+    "baseRenown": 150,
+    "description": "생산자와 이용자 모두에게 지속 가능한 거래 구조를 만드는 상업 칭호다."
+  },
+  {
+    "id": "END_CHEF",
+    "name": "왕립 식문화 연구가",
+    "category": "commerce",
+    "weights": {"sensitivity": 0.13, "style": 0.1, "discipline": 0.15, "communication": 0.08, "cooking": 0.44, "reputation": 0.1},
+    "gate": {"stats": {"sensitivity": 220, "style": 180, "discipline": 250, "communication": 160, "cooking": 460}, "meters": {"reputation": 260}, "lifetimeStats": {"challengeWins": 10}, "worldTier": 3},
+    "baseRenown": 155,
+    "description": "지역 재료와 건강한 조리법을 연결해 새로운 식문화를 제안하는 칭호다."
+  },
+  {
+    "id": "END_INNKEEPER",
+    "name": "여행자 쉼터 운영자",
+    "category": "commerce",
+    "weights": {"refinement": 0.1, "discipline": 0.15, "morals": 0.1, "communication": 0.2, "cooking": 0.2, "housework": 0.2, "reputation": 0.05},
+    "gate": {"stats": {"refinement": 150, "discipline": 190, "morals": 160, "communication": 230, "cooking": 230, "housework": 250}, "meters": {"reputation": 180}, "relations": {"citizens": 150}, "lifetimeStats": {"contracts": 8}, "worldTier": 2},
+    "baseRenown": 115,
+    "description": "먼 길을 온 누구나 안전하게 쉬고 정보를 나눌 공간을 운영하는 칭호다."
+  },
+  {
+    "id": "END_NURSE",
+    "name": "현장 회복 전문가",
+    "category": "care",
+    "weights": {"intelligence": 0.1, "sensitivity": 0.15, "discipline": 0.12, "morals": 0.15, "communication": 0.1, "nursing": 0.33, "reputation": 0.05},
+    "gate": {"stats": {"intelligence": 190, "sensitivity": 240, "discipline": 210, "morals": 260, "communication": 170, "nursing": 380}, "meters": {"reputation": 220}, "relations": {"citizens": 170}, "lifetimeStats": {"activities": 190}, "worldTier": 2},
+    "baseRenown": 135,
+    "description": "부상과 피로를 빠르게 살피고 안전한 회복 계획을 세우는 돌봄 칭호다."
+  },
+  {
+    "id": "END_HOUSEWIFE",
+    "name": "생활 설계가",
+    "category": "care",
+    "weights": {"discipline": 0.15, "morals": 0.12, "communication": 0.1, "cooking": 0.22, "housework": 0.31, "nursing": 0.05, "reputation": 0.05},
+    "gate": {"stats": {"discipline": 190, "morals": 150, "communication": 130, "cooking": 250, "housework": 340, "nursing": 110}, "meters": {"reputation": 140}, "lifetimeStats": {"activities": 150}, "worldTier": 1},
+    "baseRenown": 100,
+    "description": "한정된 시간과 자원으로 건강하고 지속 가능한 일상을 설계하는 칭호다."
+  },
+  {
+    "id": "END_COMMONER",
+    "name": "생활의 달인",
+    "category": "civic",
+    "weights": {"stamina": 0.12, "discipline": 0.14, "morals": 0.12, "communication": 0.13, "cooking": 0.14, "housework": 0.2, "reputation": 0.05, "gold": 0.1},
+    "gate": {"stats": {"stamina": 160, "discipline": 170, "morals": 140, "communication": 150, "cooking": 170, "housework": 220}, "meters": {"reputation": 110}, "relations": {"citizens": 120}, "lifetimeStats": {"activities": 130}, "worldTier": 1},
+    "baseRenown": 85,
+    "description": "화려한 지위 없이도 일과 휴식, 이웃 관계를 단단하게 꾸리는 생활 칭호다."
+  },
+  {
+    "id": "END_DEMON_BRIDE",
+    "name": "그림자 협상가",
+    "category": "shadow",
+    "weights": {"intelligence": 0.18, "refinement": 0.12, "style": 0.14, "magic": 0.18, "etiquette": 0.12, "communication": 0.2, "reputation": 0.06},
+    "gate": {"stats": {"intelligence": 320, "refinement": 230, "style": 250, "magic": 300, "etiquette": 220, "communication": 350}, "meters": {"reputation": 170, "integrityViolations": 3}, "lifetimeStats": {"contracts": 12}, "worldTier": 3},
+    "baseRenown": 155,
+    "description": "모호한 경계의 분쟁을 읽고 더 큰 피해 없이 합의점을 찾아내는 칭호다."
+  },
+  {
+    "id": "END_DEMON_QUEEN",
+    "name": "경계의 통솔자",
+    "category": "shadow",
+    "weights": {"intelligence": 0.16, "style": 0.14, "discipline": 0.12, "combat": 0.14, "magic": 0.2, "communication": 0.14, "reputation": 0.1},
+    "gate": {"stats": {"intelligence": 480, "style": 390, "discipline": 360, "combat": 380, "magic": 500, "communication": 390}, "meters": {"reputation": 300, "integrityViolations": 5}, "relations": {"rival": 240}, "lifetimeStats": {"challengeWins": 18, "adventures": 22}, "worldTier": 5},
+    "baseRenown": 225,
+    "description": "불안정한 경계 지역의 세력을 통솔하고 새로운 질서를 세우는 칭호다."
+  },
+  {
+    "id": "END_COURTESAN",
+    "name": "무대의 별",
+    "category": "shadow",
+    "weights": {"sensitivity": 0.14, "style": 0.25, "refinement": 0.1, "communication": 0.16, "art": 0.2, "dance": 0.1, "reputation": 0.05},
+    "gate": {"stats": {"sensitivity": 270, "style": 420, "refinement": 220, "communication": 300, "art": 330, "dance": 260}, "meters": {"reputation": 300}, "relations": {"citizens": 190}, "lifetimeStats": {"challengeWins": 10}, "worldTier": 3},
+    "baseRenown": 160,
+    "description": "자기표현과 공연 실력으로 큰 무대를 이끌며 관객과 교감하는 칭호다."
+  },
+  {
+    "id": "END_OUTLAW",
+    "name": "규칙 밖의 해결사",
+    "category": "shadow",
+    "weights": {"stamina": 0.12, "strength": 0.12, "intelligence": 0.16, "discipline": 0.08, "combat": 0.2, "communication": 0.2, "reputation": 0.02, "gold": 0.1},
+    "gate": {"stats": {"stamina": 280, "strength": 250, "intelligence": 280, "discipline": 160, "combat": 320, "communication": 290}, "meters": {"reputation": 120, "integrityViolations": 8}, "lifetimeStats": {"contracts": 14, "adventures": 14}, "worldTier": 3},
+    "baseRenown": 145,
+    "description": "제도 밖의 막힌 문제를 빠르게 풀되 선택의 대가도 감당하는 독립 칭호다."
+  },
+  {
+    "id": "END_RUNAWAY",
+    "name": "독립 개척자",
+    "category": "independent",
+    "weights": {"stamina": 0.16, "intelligence": 0.12, "sensitivity": 0.12, "discipline": 0.12, "combat": 0.14, "communication": 0.14, "reputation": 0.05, "gold": 0.15},
+    "gate": {"stats": {"stamina": 260, "intelligence": 210, "sensitivity": 200, "discipline": 210, "combat": 230, "communication": 220}, "meters": {"reputation": 140}, "lifetimeStats": {"contracts": 10, "adventures": 10}, "worldTier": 3},
+    "baseRenown": 135,
+    "description": "정해진 길을 떠나 스스로 안전 기준과 생계, 성장 방향을 세우는 칭호다."
+  },
+  {
+    "id": "END_ADVENTURER",
+    "name": "왕국 탐사대원",
+    "category": "adventure",
+    "weights": {"stamina": 0.18, "strength": 0.12, "sensitivity": 0.1, "combat": 0.26, "magic": 0.14, "communication": 0.1, "reputation": 0.1},
+    "gate": {"stats": {"stamina": 270, "strength": 220, "sensitivity": 180, "combat": 300, "magic": 200, "communication": 170}, "meters": {"reputation": 200}, "lifetimeStats": {"adventures": 18}, "worldTier": 3},
+    "baseRenown": 145,
+    "description": "미지의 지역을 꼼꼼히 기록하고 안전한 길을 다음 탐사자에게 남기는 칭호다."
+  },
+  {
+    "id": "END_HERO",
+    "name": "시민의 수호 영웅",
+    "category": "adventure",
+    "weights": {"stamina": 0.14, "strength": 0.14, "discipline": 0.1, "morals": 0.16, "combat": 0.24, "communication": 0.08, "reputation": 0.14},
+    "gate": {"stats": {"stamina": 520, "strength": 480, "discipline": 360, "morals": 460, "combat": 590, "communication": 260}, "meters": {"reputation": 560}, "relations": {"citizens": 400}, "lifetimeStats": {"challengeWins": 25, "adventures": 32}, "worldTier": 5},
+    "baseRenown": 250,
+    "description": "압도적인 힘보다 책임 있는 선택으로 많은 사람의 신뢰를 얻은 수호 칭호다."
+  },
+  {
+    "id": "END_CUBE_ROUTE",
+    "name": "차원 도형 연구자",
+    "category": "adventure",
+    "weights": {"intelligence": 0.28, "sensitivity": 0.1, "discipline": 0.12, "combat": 0.08, "magic": 0.32, "art": 0.1},
+    "gate": {"stats": {"intelligence": 540, "sensitivity": 270, "discipline": 350, "combat": 250, "magic": 600, "art": 260}, "meters": {"reputation": 300}, "lifetimeStats": {"adventures": 24}, "worldTier": 6},
+    "baseRenown": 235,
+    "description": "균열 너머의 공간 법칙을 도형과 마력식으로 설명하는 희귀 연구 칭호다."
+  },
+  {
+    "id": "END_INDEPENDENT",
+    "name": "자립의 명인",
+    "category": "adventure",
+    "weights": {"stamina": 0.1, "intelligence": 0.1, "discipline": 0.16, "morals": 0.1, "communication": 0.14, "cooking": 0.1, "housework": 0.12, "reputation": 0.08, "gold": 0.1},
+    "gate": {"stats": {"stamina": 300, "intelligence": 300, "discipline": 420, "morals": 260, "communication": 300, "cooking": 260, "housework": 300}, "meters": {"reputation": 240}, "relations": {"guardian": 160, "steward": 160, "citizens": 180}, "lifetimeStats": {"contracts": 16, "activities": 320}, "worldTier": 4},
+    "baseRenown": 190,
+    "description": "자원과 관계, 건강을 스스로 관리하며 어떤 환경에서도 성장을 이어 가는 칭호다."
+  }
+]

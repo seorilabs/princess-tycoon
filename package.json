@@ -1,0 +1,18 @@
+{
+  "name": "princess-tycoon",
+  "version": "0.1.0",
+  "private": true,
+  "description": "성장 방향을 설정하고 자동 활동으로 무한히 성장하는 모바일 육성 시뮬레이션",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "test": "npm run check:docs && npm run check:content && npm run check:architecture && npm run test:godot",
+    "check:docs": "bash scripts/check_docs.sh",
+    "check:content": "bash scripts/check_content.sh",
+    "check:architecture": "bash scripts/check_architecture.sh",
+    "test:godot": "bash scripts/godot_quality_gate.sh --project godot --smoke-script tests/test_runner.gd --smoke-script tests/acceptance_gap_smoke.gd --smoke-script tests/headless_smoke.gd --smoke-script tests/layout_probe.gd --smoke-script tests/ports_smoke.gd --smoke-script tests/ports_ui_smoke.gd --smoke-script tests/ui_motion_smoke.gd",
+    "test:balance": "${GODOT_BIN:-godot} --headless --path godot --script res://tests/balance_sim.gd",
+    "build:web": "mkdir -p build/web && ${GODOT_BIN:-godot} --headless --path godot --export-release Web ../build/web/index.html"
+  }
+}

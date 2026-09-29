@@ -1,0 +1,129 @@
+[
+  {
+    "id": "balanced",
+    "name": "균형",
+    "description": "여러 분야를 고르게 익히며 상황에 맞춰 진로를 넓힌다.",
+    "weights": {
+      "stamina": 0.06,
+      "strength": 0.05,
+      "intelligence": 0.08,
+      "refinement": 0.07,
+      "sensitivity": 0.06,
+      "style": 0.05,
+      "discipline": 0.07,
+      "morals": 0.06,
+      "faith": 0.04,
+      "combat": 0.06,
+      "magic": 0.06,
+      "etiquette": 0.05,
+      "communication": 0.06,
+      "art": 0.06,
+      "cooking": 0.05,
+      "housework": 0.04,
+      "nursing": 0.04,
+      "dance": 0.04
+    },
+    "preferredTags": ["balanced", "growth", "safe"]
+  },
+  {
+    "id": "martial",
+    "name": "무예",
+    "description": "강인한 체력과 전투 숙련을 바탕으로 어려운 도전에 정면으로 나선다.",
+    "weights": {
+      "stamina": 0.18,
+      "strength": 0.22,
+      "discipline": 0.08,
+      "combat": 0.36,
+      "reputation": 0.16
+    },
+    "preferredTags": ["martial", "combat", "outdoor"]
+  },
+  {
+    "id": "scholar",
+    "name": "학문",
+    "description": "깊은 사고와 마법 이론, 명료한 소통을 함께 단련한다.",
+    "weights": {
+      "intelligence": 0.3,
+      "magic": 0.2,
+      "communication": 0.18,
+      "etiquette": 0.12,
+      "discipline": 0.1,
+      "reputation": 0.1
+    },
+    "preferredTags": ["academic", "magic", "study"]
+  },
+  {
+    "id": "artist",
+    "name": "예술",
+    "description": "감각과 표현력을 길러 무대와 작품으로 사람들의 마음을 움직인다.",
+    "weights": {
+      "sensitivity": 0.18,
+      "style": 0.12,
+      "art": 0.32,
+      "dance": 0.2,
+      "communication": 0.08,
+      "reputation": 0.1
+    },
+    "preferredTags": ["art", "performance", "creative"]
+  },
+  {
+    "id": "leader",
+    "name": "리더십",
+    "description": "기품과 설득, 절제를 조화시켜 공동체를 이끄는 힘을 기른다.",
+    "weights": {
+      "intelligence": 0.12,
+      "refinement": 0.22,
+      "discipline": 0.12,
+      "etiquette": 0.18,
+      "communication": 0.18,
+      "reputation": 0.18
+    },
+    "preferredTags": ["leadership", "social", "public"]
+  },
+  {
+    "id": "care",
+    "name": "돌봄",
+    "description": "생활 기술과 치유 지식을 익혀 주변의 안전과 회복을 돕는다.",
+    "weights": {
+      "sensitivity": 0.1,
+      "morals": 0.2,
+      "faith": 0.18,
+      "cooking": 0.1,
+      "housework": 0.12,
+      "nursing": 0.22,
+      "reputation": 0.08
+    },
+    "preferredTags": ["care", "service", "healing"]
+  },
+  {
+    "id": "explorer",
+    "name": "탐험",
+    "description": "튼튼한 몸과 기민한 판단으로 미지의 지역과 사건을 개척한다.",
+    "weights": {
+      "stamina": 0.14,
+      "strength": 0.1,
+      "sensitivity": 0.1,
+      "combat": 0.24,
+      "magic": 0.18,
+      "communication": 0.08,
+      "reputation": 0.16
+    },
+    "preferredTags": ["adventure", "exploration", "risk"]
+  },
+  {
+    "id": "prosperity",
+    "name": "번영",
+    "description": "실무 감각과 교류 능력으로 안정적인 수입과 성장 기반을 만든다.",
+    "weights": {
+      "refinement": 0.08,
+      "style": 0.12,
+      "discipline": 0.08,
+      "communication": 0.24,
+      "cooking": 0.12,
+      "housework": 0.1,
+      "reputation": 0.1,
+      "gold": 0.16
+    },
+    "preferredTags": ["commerce", "service", "reward"]
+  }
+]

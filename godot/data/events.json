@@ -1,0 +1,419 @@
+[
+  {
+    "id": "EV_NEW_YEAR",
+    "type": "seasonal",
+    "title": "새 연차의 다짐",
+    "description": "아카데미 광장에 새 연차의 목표를 적는 푸른 현수막이 걸렸다.",
+    "once": false,
+    "priority": 60,
+    "weight": 100,
+    "trigger": {"kind": "season_start", "seasonOfYear": 1},
+    "choices": [
+      {"id": "plan", "text": "구체적인 훈련 목표를 적는다", "effects": {"stats": {"discipline": 8}, "meters": {"stress": 2}, "bigValues": {}, "relations": {"steward": 4}, "flags": {"year_goal_set": true}}},
+      {"id": "pace", "text": "지킬 수 있는 한 가지 원칙만 적는다", "effects": {"stats": {"discipline": 3}, "meters": {"stress": -4}, "bigValues": {}, "relations": {}, "flags": {}}}
+    ],
+    "defaultChoice": "pace",
+    "cooldownSlots": 112
+  },
+  {
+    "id": "EV_SPRING_FAIR",
+    "type": "seasonal",
+    "title": "새싹 교류 장터",
+    "description": "학생과 시민이 직접 만든 물건을 나누는 작은 장터가 열렸다.",
+    "once": false,
+    "priority": 45,
+    "weight": 90,
+    "trigger": {"kind": "season_slot", "seasonOfYear": 1, "slot": 14},
+    "choices": [
+      {"id": "help", "text": "운영을 도우며 사람들과 인사한다", "effects": {"stats": {"communication": 6, "housework": 3}, "meters": {"energy": -6, "reputation": 3}, "bigValues": {"gold": 80}, "relations": {"citizens": 6}, "flags": {}}},
+      {"id": "browse", "text": "천천히 둘러보며 아이디어를 모은다", "effects": {"stats": {"sensitivity": 4, "style": 3}, "meters": {"stress": -5}, "bigValues": {}, "relations": {}, "flags": {}}}
+    ],
+    "defaultChoice": "browse",
+    "cooldownSlots": 112
+  },
+  {
+    "id": "EV_ART_WEEK",
+    "type": "seasonal",
+    "title": "열린 창작 주간",
+    "description": "복도와 정원이 임시 전시장으로 바뀌어 누구나 작업 과정을 공개한다.",
+    "once": false,
+    "priority": 45,
+    "weight": 90,
+    "trigger": {"kind": "season_slot", "seasonOfYear": 2, "slot": 7},
+    "choices": [
+      {"id": "exhibit", "text": "미완성 작품도 용기 내어 공개한다", "effects": {"stats": {"art": 7, "style": 4}, "meters": {"stress": 4, "reputation": 4}, "bigValues": {}, "relations": {"rival": 3}, "flags": {"shared_work": true}}},
+      {"id": "review", "text": "작품을 보고 따뜻한 감상을 남긴다", "effects": {"stats": {"sensitivity": 5, "communication": 3}, "meters": {"stress": -2}, "bigValues": {}, "relations": {"citizens": 3}, "flags": {}}}
+    ],
+    "defaultChoice": "review",
+    "cooldownSlots": 112
+  },
+  {
+    "id": "EV_SUMMER_BREAK",
+    "type": "seasonal",
+    "title": "한낮의 그늘 수업",
+    "description": "더위를 피해 야외 수업이 큰 나무 아래의 짧은 체험 시간으로 바뀌었다.",
+    "once": false,
+    "priority": 45,
+    "weight": 90,
+    "trigger": {"kind": "season_slot", "seasonOfYear": 2, "slot": 21},
+    "choices": [
+      {"id": "practice", "text": "가벼운 체력 훈련에 참여한다", "effects": {"stats": {"stamina": 6, "discipline": 2}, "meters": {"energy": -5, "stress": -3}, "bigValues": {}, "relations": {}, "flags": {}}},
+      {"id": "rest", "text": "그늘에서 물을 마시며 쉰다", "effects": {"stats": {}, "meters": {"energy": 14, "stress": -9}, "bigValues": {}, "relations": {"guardian": 2}, "flags": {}}}
+    ],
+    "defaultChoice": "rest",
+    "cooldownSlots": 112
+  },
+  {
+    "id": "EV_HARVEST",
+    "type": "seasonal",
+    "title": "공동 수확의 날",
+    "description": "아카데미 온실의 풍성한 작물을 시민 식당과 나누는 날이 찾아왔다.",
+    "once": false,
+    "priority": 45,
+    "weight": 90,
+    "trigger": {"kind": "season_slot", "seasonOfYear": 3, "slot": 8},
+    "choices": [
+      {"id": "kitchen", "text": "공동 주방에서 식사를 준비한다", "effects": {"stats": {"cooking": 7, "housework": 4}, "meters": {"energy": -7, "reputation": 4}, "bigValues": {}, "relations": {"citizens": 7}, "flags": {}}},
+      {"id": "record", "text": "수확량과 배분 기록을 정리한다", "effects": {"stats": {"intelligence": 4, "discipline": 5}, "meters": {"reputation": 2}, "bigValues": {"gold": 70}, "relations": {"steward": 3}, "flags": {}}}
+    ],
+    "defaultChoice": "record",
+    "cooldownSlots": 112
+  },
+  {
+    "id": "EV_AUTUMN_LIBRARY",
+    "type": "seasonal",
+    "title": "긴밤 자료 개방",
+    "description": "도서관이 늦은 시간까지 열리고 평소 닫혀 있던 연구 자료가 공개됐다.",
+    "once": false,
+    "priority": 45,
+    "weight": 90,
+    "trigger": {"kind": "season_slot", "seasonOfYear": 3, "slot": 20},
+    "choices": [
+      {"id": "research", "text": "희귀 자료를 집중해서 읽는다", "effects": {"stats": {"intelligence": 8, "magic": 3}, "meters": {"energy": -8, "stress": 5}, "bigValues": {}, "relations": {}, "flags": {"rare_notes": true}}},
+      {"id": "catalog", "text": "자료 정리를 도우며 천천히 살핀다", "effects": {"stats": {"intelligence": 4, "discipline": 4}, "meters": {"stress": -1, "reputation": 2}, "bigValues": {}, "relations": {"steward": 3}, "flags": {}}}
+    ],
+    "defaultChoice": "catalog",
+    "cooldownSlots": 112
+  },
+  {
+    "id": "EV_WINTER_GALA",
+    "type": "seasonal",
+    "title": "겨울 빛의 무도회",
+    "description": "경쟁보다 교류를 위한 겨울 행사가 열려 각자의 한 해를 축하한다.",
+    "once": false,
+    "priority": 45,
+    "weight": 90,
+    "trigger": {"kind": "season_slot", "seasonOfYear": 4, "slot": 14},
+    "choices": [
+      {"id": "perform", "text": "짧은 축하 공연에 참여한다", "effects": {"stats": {"style": 5, "art": 4, "dance": 6}, "meters": {"energy": -6, "reputation": 5}, "bigValues": {}, "relations": {"rival": 4, "citizens": 3}, "flags": {}}},
+      {"id": "welcome", "text": "낯선 참석자들이 어울리도록 돕는다", "effects": {"stats": {"etiquette": 5, "communication": 6}, "meters": {"stress": -3, "reputation": 3}, "bigValues": {}, "relations": {"citizens": 4}, "flags": {}}}
+    ],
+    "defaultChoice": "welcome",
+    "cooldownSlots": 112
+  },
+  {
+    "id": "EV_YEAR_REVIEW",
+    "type": "seasonal",
+    "title": "한 해의 지도",
+    "description": "지난 네 시즌의 발자취가 한 장의 성장 지도로 정리됐다.",
+    "once": false,
+    "priority": 65,
+    "weight": 100,
+    "trigger": {"kind": "season_slot", "seasonOfYear": 4, "slot": 28},
+    "choices": [
+      {"id": "strength", "text": "가장 성장한 분야의 다음 단계를 찾는다", "effects": {"stats": {"discipline": 5}, "meters": {"reputation": 3}, "bigValues": {"renown": 8}, "relations": {"steward": 3}, "flags": {"reviewed_strength": true}}},
+      {"id": "balance", "text": "소홀했던 분야를 조용히 점검한다", "effects": {"stats": {"sensitivity": 3, "morals": 3}, "meters": {"stress": -6}, "bigValues": {"renown": 5}, "relations": {"guardian": 3}, "flags": {"reviewed_balance": true}}}
+    ],
+    "defaultChoice": "balance",
+    "cooldownSlots": 112
+  },
+  {
+    "id": "EV_FIRST_MASTERY",
+    "type": "growth",
+    "title": "손에 익은 움직임",
+    "description": "반복해 온 활동의 흐름이 처음으로 자연스럽게 이어졌다.",
+    "once": true,
+    "priority": 80,
+    "weight": 100,
+    "trigger": {"kind": "mastery_reached", "threshold": 10},
+    "choices": [
+      {"id": "document", "text": "배운 요령을 짧게 기록한다", "effects": {"stats": {"intelligence": 3, "discipline": 5}, "meters": {"reputation": 2}, "bigValues": {}, "relations": {"steward": 2}, "flags": {"first_mastery_noted": true}}},
+      {"id": "celebrate", "text": "작은 성취를 충분히 즐긴다", "effects": {"stats": {"sensitivity": 3}, "meters": {"energy": 8, "stress": -8}, "bigValues": {}, "relations": {"guardian": 3}, "flags": {"first_mastery_noted": true}}}
+    ],
+    "defaultChoice": "celebrate",
+    "cooldownSlots": 0
+  },
+  {
+    "id": "EV_TIER_UP",
+    "type": "growth",
+    "title": "넓어진 세계 지도",
+    "description": "명성이 높아지며 더 먼 지역과 높은 난도의 의뢰가 지도에 나타났다.",
+    "once": false,
+    "priority": 85,
+    "weight": 100,
+    "trigger": {"kind": "world_tier_up"},
+    "choices": [
+      {"id": "scout", "text": "새 지역의 정보를 먼저 조사한다", "effects": {"stats": {"intelligence": 4, "sensitivity": 3}, "meters": {"stress": 2}, "bigValues": {"renown": 5}, "relations": {"steward": 2}, "flags": {"tier_briefing_read": true}}},
+      {"id": "steady", "text": "현재 일정부터 안정적으로 마무리한다", "effects": {"stats": {"discipline": 4}, "meters": {"energy": 5, "stress": -4}, "bigValues": {"renown": 3}, "relations": {}, "flags": {}}}
+    ],
+    "defaultChoice": "steady",
+    "cooldownSlots": 28
+  },
+  {
+    "id": "EV_FIRST_TITLE",
+    "type": "growth",
+    "title": "첫 진로 휘장",
+    "description": "쌓아 온 선택이 하나의 진로 칭호로 인정되어 작은 휘장이 도착했다.",
+    "once": true,
+    "priority": 90,
+    "weight": 100,
+    "trigger": {"kind": "career_title_gained", "stars": 1},
+    "choices": [
+      {"id": "display", "text": "공용 게시판에 휘장을 건다", "effects": {"stats": {"style": 3}, "meters": {"reputation": 8}, "bigValues": {"renown": 10}, "relations": {"citizens": 5}, "flags": {"first_title_displayed": true}}},
+      {"id": "keep", "text": "기록함에 보관하고 다음 목표를 세운다", "effects": {"stats": {"discipline": 5}, "meters": {"stress": -4}, "bigValues": {"renown": 8}, "relations": {"guardian": 4}, "flags": {"first_title_displayed": false}}}
+    ],
+    "defaultChoice": "keep",
+    "cooldownSlots": 0
+  },
+  {
+    "id": "EV_RIVAL_RECOGNITION",
+    "type": "growth",
+    "title": "경쟁자의 인정",
+    "description": "오랫동안 겨뤄 온 라이벌이 이번 성과만큼은 분명히 인정했다.",
+    "once": true,
+    "priority": 75,
+    "weight": 100,
+    "trigger": {"kind": "relation_reached", "relation": "rival", "value": 220},
+    "choices": [
+      {"id": "share", "text": "서로의 훈련법을 한 가지씩 나눈다", "effects": {"stats": {"discipline": 4, "communication": 5}, "meters": {"reputation": 3}, "bigValues": {}, "relations": {"rival": 10}, "flags": {"rival_training_shared": true}}},
+      {"id": "respect", "text": "짧게 감사를 전하고 다음 승부를 약속한다", "effects": {"stats": {"refinement": 4}, "meters": {"stress": -3}, "bigValues": {}, "relations": {"rival": 7}, "flags": {}}}
+    ],
+    "defaultChoice": "respect",
+    "cooldownSlots": 0
+  },
+  {
+    "id": "EV_FAITH_INSIGHT",
+    "type": "condition",
+    "title": "조용한 확신",
+    "description": "오랜 성찰 끝에 무엇을 지키며 성장할지 스스로의 말로 정리할 수 있게 됐다.",
+    "once": true,
+    "priority": 58,
+    "weight": 80,
+    "trigger": {"kind": "stat_gte", "stat": "faith", "value": 220},
+    "choices": [
+      {"id": "serve", "text": "확신을 작은 봉사로 옮긴다", "effects": {"stats": {"morals": 6, "nursing": 3}, "meters": {"energy": -3, "reputation": 4}, "bigValues": {}, "relations": {"citizens": 6}, "flags": {"faith_insight": true}}},
+      {"id": "reflect", "text": "서두르지 않고 생각을 더 다듬는다", "effects": {"stats": {"faith": 5, "discipline": 3}, "meters": {"stress": -5}, "bigValues": {}, "relations": {}, "flags": {"faith_insight": true}}}
+    ],
+    "defaultChoice": "reflect",
+    "cooldownSlots": 0
+  },
+  {
+    "id": "EV_PUBLIC_PRAISE",
+    "type": "condition",
+    "title": "광장의 감사 인사",
+    "description": "최근의 활동이 시민 게시판에 소개되어 여러 사람이 감사 메시지를 남겼다.",
+    "once": false,
+    "priority": 52,
+    "weight": 70,
+    "trigger": {"kind": "meter_gte", "meter": "reputation", "value": 300},
+    "choices": [
+      {"id": "credit", "text": "함께한 사람들의 이름도 소개한다", "effects": {"stats": {"morals": 4, "communication": 4}, "meters": {"reputation": 5}, "bigValues": {"renown": 4}, "relations": {"citizens": 7, "steward": 3}, "flags": {}}},
+      {"id": "thank", "text": "간결하게 감사하고 일상으로 돌아간다", "effects": {"stats": {"refinement": 3}, "meters": {"stress": -3, "reputation": 2}, "bigValues": {"renown": 3}, "relations": {"citizens": 4}, "flags": {}}}
+    ],
+    "defaultChoice": "thank",
+    "cooldownSlots": 112
+  },
+  {
+    "id": "EV_OVERWORK",
+    "type": "condition",
+    "title": "무거워진 발걸음",
+    "description": "집중력이 흐려지고 작은 실수가 늘어 지금의 일정에 경고가 켜졌다.",
+    "once": false,
+    "priority": 95,
+    "weight": 100,
+    "trigger": {"kind": "meter_gte", "meter": "stress", "value": 85},
+    "choices": [
+      {"id": "pause", "text": "일정을 줄이고 즉시 휴식한다", "effects": {"stats": {}, "meters": {"energy": 18, "stress": -30}, "bigValues": {}, "relations": {"guardian": 4, "steward": 2}, "flags": {"recovery_recommended": true}}},
+      {"id": "delegate", "text": "남은 일을 나누고 우선순위를 다시 정한다", "effects": {"stats": {"communication": 4, "discipline": 3}, "meters": {"stress": -18}, "bigValues": {"gold": -60}, "relations": {"steward": 5}, "flags": {"recovery_recommended": true}}}
+    ],
+    "defaultChoice": "pause",
+    "cooldownSlots": 28
+  },
+  {
+    "id": "EV_RECOVERY",
+    "type": "condition",
+    "title": "회복의 기준",
+    "description": "충분히 쉰 뒤 몸의 신호를 더 일찍 알아차리는 방법을 배웠다.",
+    "once": false,
+    "priority": 62,
+    "weight": 85,
+    "trigger": {"kind": "recovered", "fromStress": 80, "toStress": 35},
+    "choices": [
+      {"id": "routine", "text": "짧은 회복 루틴을 일정에 넣는다", "effects": {"stats": {"stamina": 4, "discipline": 3}, "meters": {"energy": 8, "stress": -6}, "bigValues": {}, "relations": {}, "flags": {"recovery_routine": true}}},
+      {"id": "checkin", "text": "후견인에게 현재 상태를 알린다", "effects": {"stats": {"communication": 3}, "meters": {"stress": -8}, "bigValues": {}, "relations": {"guardian": 6}, "flags": {}}}
+    ],
+    "defaultChoice": "checkin",
+    "cooldownSlots": 56
+  },
+  {
+    "id": "EV_BALANCED_GROWTH",
+    "type": "condition",
+    "title": "고른 성장의 결실",
+    "description": "서로 다른 능력이 연결되며 예상하지 못한 문제도 차분히 풀 수 있게 됐다.",
+    "once": false,
+    "priority": 50,
+    "weight": 65,
+    "trigger": {"kind": "balanced_stats", "minimum": 160, "maximumSpread": 90, "minimumCount": 6},
+    "choices": [
+      {"id": "mentor", "text": "초보 수련생의 계획을 함께 살핀다", "effects": {"stats": {"communication": 4, "morals": 4}, "meters": {"energy": -3, "reputation": 5}, "bigValues": {"renown": 5}, "relations": {"citizens": 5}, "flags": {}}},
+      {"id": "journal", "text": "능력들이 연결된 순간을 기록한다", "effects": {"stats": {"intelligence": 3, "sensitivity": 3, "discipline": 3}, "meters": {"stress": -3}, "bigValues": {"renown": 3}, "relations": {}, "flags": {}}}
+    ],
+    "defaultChoice": "journal",
+    "cooldownSlots": 112
+  },
+  {
+    "id": "EV_LOST_POUCH",
+    "type": "random",
+    "title": "이름표가 달린 주머니",
+    "description": "복도 모퉁이에서 주인의 이름표가 달린 동전 주머니를 발견했다.",
+    "once": false,
+    "priority": 35,
+    "weight": 45,
+    "trigger": {"kind": "random", "minimumWorldTier": 1},
+    "choices": [
+      {"id": "return", "text": "안내실에 맡겨 주인에게 돌려준다", "effects": {"stats": {"morals": 5}, "meters": {"reputation": 3}, "bigValues": {"gold": 40}, "relations": {"citizens": 4}, "flags": {}}},
+      {"id": "leave", "text": "눈에 띄는 곳에 표시하고 자리를 지킨다", "effects": {"stats": {"discipline": 2}, "meters": {"energy": -2, "reputation": 1}, "bigValues": {}, "relations": {"citizens": 2}, "flags": {}}},
+      {"id": "borrow", "text": "일부를 급한 비용에 쓰고 나중에 돌려놓는다", "effects": {"stats": {}, "meters": {"reputation": -5, "integrityViolations": 1}, "bigValues": {"gold": 320}, "relations": {"citizens": -5, "guardian": -2}, "flags": {"unfair_choice_made": true}}}
+    ],
+    "defaultChoice": "return",
+    "cooldownSlots": 84
+  },
+  {
+    "id": "EV_SUDDEN_REQUEST",
+    "type": "random",
+    "title": "예정보다 빠른 요청",
+    "description": "한 부서가 갑작스러운 인력 부족으로 짧은 지원을 요청했다.",
+    "once": false,
+    "priority": 34,
+    "weight": 50,
+    "trigger": {"kind": "random", "minimumEnergy": 35},
+    "choices": [
+      {"id": "assist", "text": "가능한 범위를 정하고 돕는다", "effects": {"stats": {"communication": 4, "housework": 3}, "meters": {"energy": -8, "stress": 5, "reputation": 3}, "bigValues": {"gold": 130}, "relations": {"steward": 3}, "flags": {}}},
+      {"id": "decline", "text": "현재 일정 때문에 어렵다고 정중히 알린다", "effects": {"stats": {"discipline": 2}, "meters": {"stress": -2}, "bigValues": {}, "relations": {}, "flags": {}}}
+    ],
+    "defaultChoice": "decline",
+    "cooldownSlots": 56
+  },
+  {
+    "id": "EV_TRAVELER",
+    "type": "random",
+    "title": "먼 길의 지도 제작자",
+    "description": "낯선 지역의 지도를 그리는 여행자가 아카데미 길을 물었다.",
+    "once": false,
+    "priority": 33,
+    "weight": 42,
+    "trigger": {"kind": "random", "minimumWorldTier": 1},
+    "choices": [
+      {"id": "guide", "text": "직접 안내하며 바깥 이야기를 듣는다", "effects": {"stats": {"sensitivity": 4, "communication": 4}, "meters": {"energy": -4}, "bigValues": {}, "relations": {"citizens": 3}, "flags": {"traveler_map_hint": true}}},
+      {"id": "map", "text": "간단한 길 지도를 그려 건넨다", "effects": {"stats": {"art": 3, "discipline": 2}, "meters": {"reputation": 1}, "bigValues": {"gold": 30}, "relations": {}, "flags": {}}}
+    ],
+    "defaultChoice": "map",
+    "cooldownSlots": 84
+  },
+  {
+    "id": "EV_BROKEN_TOOL",
+    "type": "random",
+    "title": "멈춰 버린 연습 도구",
+    "description": "공용 연습 도구 하나가 갑자기 작동을 멈춰 다음 수업이 곤란해졌다.",
+    "once": false,
+    "priority": 36,
+    "weight": 46,
+    "trigger": {"kind": "random", "minimumDiscipline": 40},
+    "choices": [
+      {"id": "repair", "text": "설명서를 읽고 안전하게 수리한다", "effects": {"stats": {"intelligence": 3, "housework": 5}, "meters": {"energy": -5, "reputation": 2}, "bigValues": {"gold": 50}, "relations": {"steward": 3}, "flags": {}}},
+      {"id": "report", "text": "사용을 막고 담당자에게 정확히 알린다", "effects": {"stats": {"discipline": 3, "communication": 2}, "meters": {"reputation": 1}, "bigValues": {}, "relations": {"steward": 2}, "flags": {}}}
+    ],
+    "defaultChoice": "report",
+    "cooldownSlots": 70
+  },
+  {
+    "id": "EV_QUIET_DISCOVERY",
+    "type": "random",
+    "title": "창가의 오래된 메모",
+    "description": "자주 지나던 창가에서 이전 수련생이 남긴 짧은 공부 메모를 발견했다.",
+    "once": false,
+    "priority": 32,
+    "weight": 38,
+    "trigger": {"kind": "random", "maximumStress": 65},
+    "choices": [
+      {"id": "study", "text": "메모의 풀이를 따라가 본다", "effects": {"stats": {"intelligence": 5, "magic": 2}, "meters": {"energy": -3, "stress": 2}, "bigValues": {}, "relations": {}, "flags": {}}},
+      {"id": "archive", "text": "누구나 볼 수 있게 자료함에 보관한다", "effects": {"stats": {"morals": 3}, "meters": {"reputation": 2}, "bigValues": {}, "relations": {"citizens": 2}, "flags": {}}}
+    ],
+    "defaultChoice": "archive",
+    "cooldownSlots": 84
+  },
+  {
+    "id": "EV_GUARDIAN_LETTER",
+    "type": "relation",
+    "title": "후견인의 짧은 편지",
+    "description": "성과보다 건강을 먼저 살피라는 익숙한 손글씨의 편지가 도착했다.",
+    "once": false,
+    "priority": 42,
+    "weight": 55,
+    "trigger": {"kind": "relation_periodic", "relation": "guardian", "minimum": 80},
+    "choices": [
+      {"id": "reply", "text": "최근의 기쁨과 어려움을 솔직히 적는다", "effects": {"stats": {"communication": 4}, "meters": {"stress": -8}, "bigValues": {}, "relations": {"guardian": 8}, "flags": {}}},
+      {"id": "keepsake", "text": "편지를 잘 접어 기록함에 보관한다", "effects": {"stats": {"sensitivity": 3}, "meters": {"energy": 5, "stress": -5}, "bigValues": {}, "relations": {"guardian": 4}, "flags": {}}}
+    ],
+    "defaultChoice": "keepsake",
+    "cooldownSlots": 112
+  },
+  {
+    "id": "EV_STEWARD_COUNSEL",
+    "type": "relation",
+    "title": "비서의 일정 조언",
+    "description": "비서가 최근 활동 기록에서 반복되는 피로 구간을 찾아 표시해 두었다.",
+    "once": false,
+    "priority": 48,
+    "weight": 60,
+    "trigger": {"kind": "relation_periodic", "relation": "steward", "minimum": 90},
+    "choices": [
+      {"id": "revise", "text": "조언을 반영해 일정 기준을 조정한다", "effects": {"stats": {"discipline": 5, "intelligence": 2}, "meters": {"stress": -6}, "bigValues": {}, "relations": {"steward": 7}, "flags": {"schedule_reviewed": true}}},
+      {"id": "observe", "text": "한 주 더 기록한 뒤 함께 판단한다", "effects": {"stats": {"intelligence": 3}, "meters": {"stress": -2}, "bigValues": {}, "relations": {"steward": 4}, "flags": {}}}
+    ],
+    "defaultChoice": "observe",
+    "cooldownSlots": 84
+  },
+  {
+    "id": "EV_RIVAL_CHALLENGE",
+    "type": "relation",
+    "title": "라이벌의 공동 과제",
+    "description": "라이벌이 승부 대신 서로의 약점을 보완하는 하루짜리 과제를 제안했다.",
+    "once": false,
+    "priority": 46,
+    "weight": 58,
+    "trigger": {"kind": "relation_periodic", "relation": "rival", "minimum": 50},
+    "choices": [
+      {"id": "accept", "text": "서로 다른 역할을 맡아 과제를 해결한다", "effects": {"stats": {"discipline": 4, "communication": 5}, "meters": {"energy": -6, "stress": 2, "reputation": 2}, "bigValues": {"renown": 3}, "relations": {"rival": 9}, "flags": {}}},
+      {"id": "later", "text": "현재 일정 뒤에 다시 하자고 약속한다", "effects": {"stats": {"etiquette": 2}, "meters": {"stress": -2}, "bigValues": {}, "relations": {"rival": 3}, "flags": {}}}
+    ],
+    "defaultChoice": "later",
+    "cooldownSlots": 70
+  },
+  {
+    "id": "EV_CITIZEN_THANKS",
+    "type": "relation",
+    "title": "시민들의 감사 꾸러미",
+    "description": "그동안 도움을 받은 사람들이 손편지와 간단한 간식을 보내왔다.",
+    "once": false,
+    "priority": 44,
+    "weight": 56,
+    "trigger": {"kind": "relation_reached_repeat", "relation": "citizens", "step": 150},
+    "choices": [
+      {"id": "share", "text": "꾸러미를 동료들과 나눈다", "effects": {"stats": {"morals": 4, "communication": 3}, "meters": {"energy": 8, "stress": -5, "reputation": 3}, "bigValues": {}, "relations": {"citizens": 6, "rival": 2}, "flags": {}}},
+      {"id": "thank", "text": "감사 게시판에 답장을 남긴다", "effects": {"stats": {"sensitivity": 3, "etiquette": 3}, "meters": {"stress": -3, "reputation": 4}, "bigValues": {}, "relations": {"citizens": 5}, "flags": {}}}
+    ],
+    "defaultChoice": "thank",
+    "cooldownSlots": 84
+  }
+]
